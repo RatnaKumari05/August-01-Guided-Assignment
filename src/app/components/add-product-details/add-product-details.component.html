@@ -1,0 +1,127 @@
+<p>add-product-details works!</p>
+<form class = "ngForm" (ngSubmit)="onSubmit()">
+   
+
+<div class="row">
+    <div class="col-sm-3">
+      <label class="col-form-label">Product ID</label>
+    </div>
+    <div class="col-sm-6">
+    <input type="number"  name="id" [(ngModel)] ="product.id"/>
+    </div>
+  </div>
+
+  
+<div class="row">
+    <div class="col-sm-3">
+      <label class="col-form-label">Category Unique Code</label>
+    </div>
+    <div class="col-sm-6">
+    <input type="text"  name="sku" [(ngModel)] ="product.sku"/>
+    </div>
+  </div>
+  
+  
+<div class="row">
+    <div class="col-sm-3">
+      <label class="col-form-label">Product name</label>
+    </div>
+    <div class="col-sm-6">
+    <input type="text"  name="name" [(ngModel)] ="product.name"/>
+    </div>
+  </div>
+  
+  
+<div class="row">
+    <div class="col-sm-3">
+      <label class="col-form-label">Product Description</label>
+    </div>
+    <div class="col-sm-6">
+    <input type="text"  name="description" [(ngModel)] ="product.description"/>
+    </div>
+  </div>
+  
+  
+<div class="row">
+    <div class="col-sm-3">
+      <label class="col-form-label">Price Per Unit</label>
+    </div>
+    <div class="col-sm-6">
+    <input type="number"  name="unitprice" [(ngModel)] ="product.unitprice"/>
+    </div>
+  </div>
+  
+  
+<div class="row">
+    <div class="col-sm-3">
+      <label class="col-form-label">Image of Product</label>
+    </div>
+    <div class="col-sm-6">
+      
+    <input type="text"  name="ImageUrl" [(ngModel)] ="product.imageurl"/>
+    </div>
+  </div>
+  
+  
+<div class="row">
+    <div class="col-sm-3">
+      <label class="col-form-label">Active</label>
+    </div>
+    <div class="col-sm-6">
+    <input type="number"  name="active" [(ngModel)] ="product.active"/>
+    </div>
+  </div>
+   
+
+  <div class="row">
+    <div class="col-sm-3">
+      <label class="col-form-label">Units Available In Stock</label>
+    </div>
+    <div class="col-sm-6">
+    <input type="number"  name="unitsinstock" [(ngModel)] ="product.unitsinstock"/>
+    </div>
+  </div>
+  
+  
+<div class="row">
+    <div class="col-sm-3">
+      <label class="col-form-label">Date Created</label>
+    </div>
+    <div class="col-sm-6">
+    <input type="date"  name="datecreated" [(ngModel)] ="product.datecreated"/>
+    </div>
+  </div>
+  
+  
+<div class="row">
+    <div class="col-sm-3">
+      <label class="col-form-label">Last Updated Date</label>
+    </div>
+    <div class="col-sm-6">
+    <input type="date"  name="lastupdated" [(ngModel)] ="product.lastupdated"/>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-sm-3">
+      <label class="col-form-label">Category ID</label>
+    </div>
+    <div class="col-sm-6">
+    <input type="number"  name="category ID" [(ngModel)] ="product.categoryid"/>
+    </div>
+  </div>
+  
+  &nbsp;
+  <div class="row">
+    <div class="col-sm-2">
+    <input type ="submit" value ="Submit" name="submit" class="btn btn-lg btn-dark" />
+    </div>
+    &nbsp;
+    <div class="col-sm-4">
+    <input type ="reset" value ="Reset" name="reset" class="btn btn-lg btn-dark" />
+    </div>
+    </div>
+   
+
+
+</form>

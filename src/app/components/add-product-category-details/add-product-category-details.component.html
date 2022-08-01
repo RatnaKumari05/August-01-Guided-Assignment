@@ -1,0 +1,35 @@
+<p>add-product-category-details works!</p>
+
+<form class = "ngForm" (ngSubmit)="onSubmit()">
+    
+
+    <div class="row">
+        <div class="col-sm-3">
+          <label class="col-form-label">Category ID</label>
+        </div>
+        <div class="col-sm-6">
+        <input type="number"  name="id" [(ngModel)] ="productCategory.categoryid"/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <label class="col-form-label">Category Name</label>
+        </div>
+        <div class="col-sm-6">
+        <input type="text"  name="name" [(ngModel)] ="productCategory.categoryname"/>
+        </div>
+      </div>
+    
+      &nbsp;
+      <div class="row">
+        <div class="col-sm-2">
+        <input type ="submit" value ="Submit" name="submit" class="btn btn-lg btn-dark" />
+        </div>
+        &nbsp;
+        <div class="col-sm-4">
+        <input type ="reset" value ="Reset" name="reset" class="btn btn-lg btn-dark" />
+        </div>
+        </div>
+       
+</form>

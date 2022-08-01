@@ -1,0 +1,40 @@
+<p>product works!</p>
+
+<button type="button" class="btn btn-secondary" (click)="AddNewProduct()">Add New Products</button>
+
+<table>
+<tr>
+    <th>Id</th>
+    <th>OrderId</th>
+    <th>name</th>
+    <th>description</th>
+    <th>unitprice</th>
+    <th>imageurl</th>
+    <th>active</th>
+    <th>unitsinstock</th>
+    <th>datecreated</th>
+    <th>lastupdated</th>
+    <th>categoryid</th>
+
+</tr>
+    <tr *ngFor="let PL of productList">
+        <td>{{PL.id}}</td>
+        <td>{{PL.sku}}</td>
+        <td>{{PL.name}}</td>
+        <td>{{PL.description}}</td>
+        <td>{{PL.unitprice}}</td>
+        <td><img src={{PL.imageurl}}  style="width:15%"></td>
+        <!-- <td>{{PL.imageurl}}</td> -->
+        <td>{{PL.active}}</td>
+        <td>{{PL.unitsinstock}}</td>
+        <td>{{PL.datecreated}}</td>
+        <td>{{PL.lastupdated}}</td>
+        <td>{{PL.categoryid}}</td>
+        
+        <th></th>
+    </tr>
+
+
+
+</table>
+

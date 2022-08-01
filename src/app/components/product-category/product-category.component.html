@@ -1,0 +1,23 @@
+<p>product-category works!</p>
+
+<button type="button" class="btn btn-secondary" (click)="AddNewProductCategory()">Add New Product Category</button>
+<table>
+    <tr>
+        <th>categoryid</th>
+        <th>categoryname</th>
+    </tr>
+</table>
+
+<table >
+    <tr >
+        
+        <th>Category Id</th>
+        <th>Category</th>
+    </tr>
+    <tr *ngFor="let PLT of productCategoryList">
+
+        <td>{{PLT.categoryid}}</td>
+        <td>{{PLT.categoryname}}</td>
+        
+    </tr>
+    </table>
